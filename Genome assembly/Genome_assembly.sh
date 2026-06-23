@@ -9,8 +9,8 @@ hic=${wd}/raw/hic
 species='Zuloagaea_bulbosa'
 
 #### Generate fastq from bam file for hifi raw data
-#cd ${hifi}
-#bam2fastq multiple_movies.hifi_reads.bam -o hifi_reads.fastq
+cd ${hifi}
+bam2fastq multiple_movies.hifi_reads.bam -o hifi_reads.fastq
 
 #### Run hifiasm
 cd ${wd}
