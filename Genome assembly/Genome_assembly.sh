@@ -34,7 +34,7 @@ seqkit stats ${species}_hifi_hi-c_n2.asm.hic.p_utg.10kb.fa >> ../unitig_stats.tx
 
 # Index & map Hi-C reads
 cd ${wd}/A02-HapHiC
-# mkdir n2-unitigs
+mkdir n2-unitigs
 cd n2-unitigs
 bwa index ${wd}/A01-PhasedAssembly/${species}_hifi_hi-c_n2.asm.hic.p_utg.10kb.fa
 bwa mem -5SP -t 28 ${wd}/A01-PhasedAssembly/${species}_hifi_hi-c_n2.asm.hic.p_utg.10kb.fa \
